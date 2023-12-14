@@ -37,10 +37,10 @@
              s.parentNode.insertBefore( wf, s );
          } )( document );
       </script>
-      <link rel="stylesheet" type="text/css" href="{{asset('theme/vendor/fontawesome-free/css/all.min.css')}}">
-      <link rel="stylesheet" type="text/css" href="{{asset('theme/vendor/magnific-popup/magnific-popup.min.css')}}">
-      <link rel="stylesheet" type="text/css" href="{{asset('theme/vendor/sticky-icon/stickyicon.css')}}">
-      <link rel="stylesheet" type="text/css" href="{{asset('theme/css/style.min.css')}}">
+      <link rel="stylesheet" type="text/css" href="{{asset('public/theme/vendor/fontawesome-free/css/all.min.css')}}">
+      <link rel="stylesheet" type="text/css" href="{{asset('public/theme/vendor/magnific-popup/magnific-popup.min.css')}}">
+      <link rel="stylesheet" type="text/css" href="{{asset('public/theme/vendor/sticky-icon/stickyicon.css')}}">
+      <link rel="stylesheet" type="text/css" href="{{asset('public/theme/css/style.min.css')}}">
    </head>
    <body>
       <div class="page-wrapper">
@@ -49,7 +49,7 @@
                <section class="coming-section container text-center text-grey font-primary ">
                   <div class="row align-items-center pt-10 pb-10">
                      <div class="col-md-6">
-                        <img src="{{asset('theme/images/subpages/coming-soon.jpg')}}" alt="coming soon" width="519" height="568">
+                        <img src="{{asset('public/theme/images/subpages/coming-soon.jpg')}}" alt="coming soon" width="519" height="568">
                      </div>
                      <div class="col-md-6 order-md-first">
                         <h1 class="mb-9 ls-m lh-1 font-italic text-uppercase" style="color:#D9292C">Sound Wave Audio</h1>
@@ -102,10 +102,10 @@
             </div>
          </div>
       </div>
-      <script src="{{asset('theme/vendor/jquery/jquery.min.js')}}"></script>
-      <script src="{{asset('theme/vendor/jquery.plugin/jquery.plugin.min.js')}}"></script>
-      <script src="{{asset('theme/vendor/jquery.countdown/jquery.countdown.min.js')}}"></script>
-      <script src="{{asset('theme/vendor/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
-      <script src="{{asset('theme/js/main.min.js')}}"></script>
+      <script src="{{asset('public/theme/vendor/jquery/jquery.min.js')}}"></script>
+      <script src="{{asset('public/theme/vendor/jquery.plugin/jquery.plugin.min.js')}}"></script>
+      <script src="{{asset('public/theme/vendor/jquery.countdown/jquery.countdown.min.js')}}"></script>
+      <script src="{{asset('public/theme/vendor/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
+      <script src="{{asset('public/theme/js/main.min.js')}}"></script>
    </body>
 </html>
