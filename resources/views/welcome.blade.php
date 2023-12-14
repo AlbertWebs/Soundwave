@@ -66,7 +66,7 @@
                         <hr>
                         <div class="social-links">
                            <a href="https://www.facebook.com/profile.php?id=100083312682272" class="social-link social-facebook fab fa-facebook-f"></a>
-                           <a href="#" class="social-link social-twitter fab fa-twitter"></a>
+                           <a href="https://maps.app.goo.gl/2xCHysDVBywCh9ZN9" class="social-link social-twitter fab fa-map-marker"></a>
                            <a href="https://www.instagram.com/soundwave_254/" class="social-link social-instagram fab fa-instagram"></a>
                         </div>
                      </div>
