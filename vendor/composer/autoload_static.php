@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
+class ComposerStaticInit3b477b1b9b9a1aa84c6a702ac1948dd4
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -163,6 +163,7 @@ class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
             'DeepCopy\\' => 9,
             'Database\\Seeders\\' => 17,
             'Database\\Factories\\' => 19,
+            'Darryldecode\\' => 13,
         ),
         'C' => 
         array (
@@ -176,6 +177,7 @@ class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
         ),
         'A' => 
         array (
+            'Artesaos\\SEOTools\\' => 18,
             'App\\' => 4,
         ),
     );
@@ -514,6 +516,10 @@ class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
             0 => __DIR__ . '/../..' . '/database/factories',
             1 => __DIR__ . '/..' . '/laravel/pint/database/factories',
         ),
+        'Darryldecode\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode',
+        ),
         'Cron\\' => 
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
@@ -529,6 +535,10 @@ class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
         'Brick\\Math\\' => 
         array (
             0 => __DIR__ . '/..' . '/brick/math/src',
+        ),
+        'Artesaos\\SEOTools\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools',
         ),
         'App\\' => 
         array (
@@ -547,7 +557,23 @@ class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
         'App\\Factories\\ConfigurationFactory' => __DIR__ . '/..' . '/laravel/pint/app/Factories/ConfigurationFactory.php',
         'App\\Factories\\ConfigurationResolverFactory' => __DIR__ . '/..' . '/laravel/pint/app/Factories/ConfigurationResolverFactory.php',
         'App\\Fixers\\LaravelPhpdocAlignmentFixer' => __DIR__ . '/..' . '/laravel/pint/app/Fixers/LaravelPhpdocAlignmentFixer.php',
+        'App\\Http\\Controllers\\AdminsController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminsController.php',
+        'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
+        'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
+        'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
+        'App\\Http\\Controllers\\CartController' => __DIR__ . '/../..' . '/app/Http/Controllers/CartController.php',
+        'App\\Http\\Controllers\\CheckoutController' => __DIR__ . '/../..' . '/app/Http/Controllers/CheckoutController.php',
+        'App\\Http\\Controllers\\ClientController' => __DIR__ . '/../..' . '/app/Http/Controllers/ClientController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\DemoController' => __DIR__ . '/../..' . '/app/Http/Controllers/DemoController.php',
+        'App\\Http\\Controllers\\DropzoneController' => __DIR__ . '/../..' . '/app/Http/Controllers/DropzoneController.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\ImageController' => __DIR__ . '/../..' . '/app/Http/Controllers/ImageController.php',
+        'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
+        'App\\Http\\Controllers\\WishListController' => __DIR__ . '/../..' . '/app/Http/Controllers/WishListController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -575,6 +601,27 @@ class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
         'App\\Repositories\\ConfigurationJsonRepository' => __DIR__ . '/..' . '/laravel/pint/app/Repositories/ConfigurationJsonRepository.php',
         'App\\Repositories\\GitPathsRepository' => __DIR__ . '/..' . '/laravel/pint/app/Repositories/GitPathsRepository.php',
         'App\\ValueObjects\\Issue' => __DIR__ . '/..' . '/laravel/pint/app/ValueObjects/Issue.php',
+        'Artesaos\\SEOTools\\Contracts\\JsonLd' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/JsonLd.php',
+        'Artesaos\\SEOTools\\Contracts\\JsonLdMulti' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/JsonLdMulti.php',
+        'Artesaos\\SEOTools\\Contracts\\MetaTags' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/MetaTags.php',
+        'Artesaos\\SEOTools\\Contracts\\OpenGraph' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/OpenGraph.php',
+        'Artesaos\\SEOTools\\Contracts\\SEOFriendly' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/SEOFriendly.php',
+        'Artesaos\\SEOTools\\Contracts\\SEOTools' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/SEOTools.php',
+        'Artesaos\\SEOTools\\Contracts\\TwitterCards' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/TwitterCards.php',
+        'Artesaos\\SEOTools\\Facades\\JsonLd' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/JsonLd.php',
+        'Artesaos\\SEOTools\\Facades\\JsonLdMulti' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/JsonLdMulti.php',
+        'Artesaos\\SEOTools\\Facades\\OpenGraph' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/OpenGraph.php',
+        'Artesaos\\SEOTools\\Facades\\SEOMeta' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/SEOMeta.php',
+        'Artesaos\\SEOTools\\Facades\\SEOTools' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/SEOTools.php',
+        'Artesaos\\SEOTools\\Facades\\TwitterCard' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Facades/TwitterCard.php',
+        'Artesaos\\SEOTools\\JsonLd' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/JsonLd.php',
+        'Artesaos\\SEOTools\\JsonLdMulti' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/JsonLdMulti.php',
+        'Artesaos\\SEOTools\\OpenGraph' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/OpenGraph.php',
+        'Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Providers/SEOToolsServiceProvider.php',
+        'Artesaos\\SEOTools\\SEOMeta' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/SEOMeta.php',
+        'Artesaos\\SEOTools\\SEOTools' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/SEOTools.php',
+        'Artesaos\\SEOTools\\Traits\\SEOTools' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Traits/SEOTools.php',
+        'Artesaos\\SEOTools\\TwitterCards' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/TwitterCards.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
         'Brick\\Math\\BigInteger' => __DIR__ . '/..' . '/brick/math/src/BigInteger.php',
@@ -685,6 +732,21 @@ class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
         'Cron\\HoursField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
+        'Darryldecode\\Cart\\Cart' => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode/Cart/Cart.php',
+        'Darryldecode\\Cart\\CartCollection' => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode/Cart/CartCollection.php',
+        'Darryldecode\\Cart\\CartCondition' => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode/Cart/CartCondition.php',
+        'Darryldecode\\Cart\\CartConditionCollection' => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode/Cart/CartConditionCollection.php',
+        'Darryldecode\\Cart\\CartServiceProvider' => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode/Cart/CartServiceProvider.php',
+        'Darryldecode\\Cart\\Exceptions\\InvalidConditionException' => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode/Cart/Exceptions/InvalidConditionException.php',
+        'Darryldecode\\Cart\\Exceptions\\InvalidItemException' => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode/Cart/Exceptions/InvalidItemException.php',
+        'Darryldecode\\Cart\\Exceptions\\UnknownModelException' => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode/Cart/Exceptions/UnknownModelException.php',
+        'Darryldecode\\Cart\\Facades\\CartFacade' => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode/Cart/Facades/CartFacade.php',
+        'Darryldecode\\Cart\\Helpers\\Helpers' => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode/Cart/Helpers/Helpers.php',
+        'Darryldecode\\Cart\\ItemAttributeCollection' => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode/Cart/ItemAttributeCollection.php',
+        'Darryldecode\\Cart\\ItemCollection' => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode/Cart/ItemCollection.php',
+        'Darryldecode\\Cart\\Validators\\CartConditionValidator' => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode/Cart/Validators/CartConditionValidator.php',
+        'Darryldecode\\Cart\\Validators\\CartItemValidator' => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode/Cart/Validators/CartItemValidator.php',
+        'Darryldecode\\Cart\\Validators\\Validator' => __DIR__ . '/..' . '/darryldecode/cart/src/Darryldecode/Cart/Validators/Validator.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
@@ -6689,9 +6751,9 @@ class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit9c491b8531eec05ba41a11d9276a5749::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit9c491b8531eec05ba41a11d9276a5749::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit9c491b8531eec05ba41a11d9276a5749::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit3b477b1b9b9a1aa84c6a702ac1948dd4::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit3b477b1b9b9a1aa84c6a702ac1948dd4::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit3b477b1b9b9a1aa84c6a702ac1948dd4::$classMap;
 
         }, null, ClassLoader::class);
     }
