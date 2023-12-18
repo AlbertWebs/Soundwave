@@ -1,165 +1,390 @@
 @extends('front.master')
 @section('content')
-<main class="main">
-
-    <?php $Slider = DB::table('sliders')->where('id','30')->get(); ?>
-    @if($Slider->isEmpty())
-
-    @else
-    <section class="home-slider owl-carousel owl-theme text-uppercase nav-big bg-gray" data-owl-options="{
-        'loop': false
-    }">
-
-
-
-    @foreach ($Slider as $slider)
-<br>
-    <div class="home-slide home-slide2 banner">
-        <img class="slide-bg" src="{{url('/')}}/uploads/sliders/{{$slider->image}}" alt="slider image" width="1120" height="500" style="background-color: #eee;">
-        <?php $Sliders = DB::table('product')->where('id',$slider->product_id)->get(); ?>
-        @foreach ($Sliders as $sliders)
-        <div class="container">
-            <div class="banner-layer banner-layer-middle banner-layer-left">
-                <h4 class="mb-0">{{$sliders->brand}}</h4>
-                {{-- <h3 class="m-b-2">20% off</h3> --}}
-                <?php $Categories = DB::table('category')->where('id',$sliders->cat)->get(); ?>
-                @foreach($Categories as $cat)
-                <h3 class="m-b-3 heading-border" style="color:#1DA098">{{$cat->cat}}</h3>
-                @endforeach
-                <h2 class="m-b-4">{{$sliders->name}}</h2>
-                <a href="{{url('/')}}/product/{{$sliders->slung}}" class="btn btn-block btn-dark" style="background-color: #1DA098">Shop All Sale</a>
-            </div>
-        </div>
-        @endforeach
-        <!-- End .container -->
-    </div>
-    @endforeach
-
-    <!-- End .home-slide -->
-    <hr>
-</section>
-@endif
-
-<div class="categories-section appear-animate animated fadeIn appear-animation-visible" data-animation-name="fadeIn" data-animation-delay="100" style="animation-duration: 1000ms;">
-    <div class="categories-slider owl-carousel owl-theme show-nav-hover nav-outer owl-loaded owl-drag" data-owl-options="{
-       'responsive': {
-       '0': {
-       'items': 2
-       },
-       '480': {
-       'items': 3
-       },
-       '576': {
-       'items': 4
-       },
-       '768': {
-       'items': 5
-       },
-       '992': {
-       'items': 7
-       },
-       '1200': {
-       'items': 8
-       }
-       }
-       }">
-       <?php $AllCategories = DB::table('category')->where('id','30')->get(); ?>
-       <div class="owl-stage-outer">
-          <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1440px;">
-            @foreach ($AllCategories as $item)
-            <div class="owl-item active" style="width: 160px; margin-right: 20px;">
-                <div class="product-category appear-animate animated fadeInUpShorter appear-animation-visible" data-animation-name="fadeInUpShorter" style="animation-duration: 1000ms;">
-                   <a href="{{url('/')}}/products/{{$item->slung}}">
-                      <figure>
-                         <img style="border-radius:10px;" src="{{url('/')}}/uploads/categories/{{$item->image}}" alt="{{$item->cat}}" width="280" height="240">
-                      </figure>
-                      <div class="category-content" style="text-align:center">
-                         <h3>{{$item->cat}}</h3>
-                         <span><mark class="count"><?php echo count($Pro = DB::table('product')->where('cat',$item->id)->get()) ?></mark> products</span>
-                      </div>
-                   </a>
+<main class="main home mt-4">
+    <div class="page-content">
+       <section class="intro-slider animation-slider owl-carousel owl-theme row cols-1 gutter-no" data-owl-options="{
+          'items': 1,
+          'loop': true,
+          'nav': false,
+          'dots': false,
+          'responsive': {
+          '992': {
+          'nav': true
+          }
+          }
+          }">
+          <div class="intro-slide1 banner banner-fixed" style="background-color: #e6e8e9;">
+             <figure>
+                <img src="{{asset('theme/images/demos/demo29/slides/1.jpg')}}" alt="banner" width="1903" height="469" />
+             </figure>
+             <div class="container">
+                <div class="banner-content y-50">
+                   <h3 class="banner-subtitle d-inline-block slide-animate text-uppercase" data-animation-options="{
+                      'name': 'fadeInUpShorter',
+                      'duration': '1.5s',
+                      'delay': '.3s'
+                      }">From Online Store</h3>
+                   <h2 class="banner-title slide-animate" data-animation-options="{
+                      'name': 'fadeInUpShorter',
+                      'duration': '1.3s',
+                      'delay': '.4s'
+                      }">Originals Comper Star. Xbox</h2>
+                   <p class="font-primary mb-6 slide-animate" data-animation-options="{
+                      'name': 'fadeInUpShorter',
+                      'duration': '1.2s',
+                      'delay': '.5s'
+                      }">Free Shipping on all orders over $320.00</p>
+                   <a href="demo29-shop.html" class="btn btn-rounded btn-dark btn-outline mb-1 slide-animate" data-animation-options="{
+                      'name': 'fadeInUpShorter',
+                      'duration': '1s',
+                      'delay': '.6s'
+                      }">Shop Now<i class="d-icon-arrow-right"></i></a>
                 </div>
              </div>
-             @endforeach
           </div>
+          <div class="intro-slide2 banner banner-fixed" style="background-color: #e6e8e9;">
+             <figure>
+                <img src="{{asset('theme/images/demos/demo29/slides/2.jpg')}}" alt="banner" width="1903" height="469" />
+             </figure>
+             <div class="container">
+                <div class="banner-content y-50 ml-auto text-right">
+                   <div class="slide-animate" data-animation-options="{
+                      'name': 'blurIn',
+                      'duration': '.8s'
+                      }">
+                      <h4 class="banner-subtitle text-uppercase">Lifestyle Collection</h4>
+                      <h2 class="banner-title"><b class="text-primary">Sophisticated</b>Domestic Electric
+                         Machines
+                      </h2>
+                      <a href="demo29-shop.html" class="btn btn-rounded btn-outline btn-dark">Shop now<i class="d-icon-arrow-right"></i></a>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </section>
+       <div class="container">
+          <section class="banners-grid pt-10 mt-6 pb-6">
+             <h2 class="title title-simple">Special Offers</h2>
+             <div class="row grid">
+                <div class="grid-item col-lg-6 height-x2">
+                   <div class="banner banner1 banner-fixed overlay-light appear-animate" data-animation-options="{
+                      'name': 'fadeInRightShorter'
+                      }">
+                      <figure>
+                         <img src="{{asset('theme/images/demos/demo29/banner/2.jpg')}}" alt="banner image" width="680" height="508">
+                      </figure>
+                      <div class="banner-content top w-100 text-center">
+                         <h4 class="banner-subtitle text-uppercase mb-2">
+                            Deals and Promotion
+                         </h4>
+                         <h3 class="banner-title font-weight-bold text-uppercase">Camera &amp; Lens</h3>
+                         <h5 class="text-uppercase">Start at <span class="text-primary">$250.00</span></h5>
+                      </div>
+                      <div class="banner-content bottom w-100 text-center">
+                         <a href="demo29-shop.html" class="btn btn-rounded btn-outline btn-dark mb-4">Shop Now<i class="d-icon-arrow-right"></i></a>
+                      </div>
+                   </div>
+                </div>
+                <div class="grid-item col-lg-3 col-xs-6 height-x1">
+                   <div class="banner banner2 banner-fixed overlay-light content-middle appear-animate" data-animation-options="{
+                      'name': 'fadeInDownShorter'
+                      }">
+                      <figure>
+                         <img src="{{asset('theme/images/demos/demo29/banner/3.jpg')}}" alt="banner image" width="280" height="207">
+                      </figure>
+                      <div class="banner-content">
+                         <h5 class="ls-l mb-1 opacity-8">Featured Event</h5>
+                         <h4 class="banner-subtitle text-uppercase ls-s mb-0">Black Friday</h4>
+                         <h3 class="banner-title text-primary font-weight-bold ls-s">Sale</h3>
+                         <a href="demo29-shop.html" class="btn btn-link btn-underline btn-dark">Shop
+                         Now<i class="d-icon-arrow-right"></i></a>
+                      </div>
+                   </div>
+                </div>
+                <div class="grid-item col-lg-3 col-xs-6 height-x2">
+                   <div class="banner banner4 banner-fixed overlay-dark appear-animate" data-animation-options="{
+                      'name': 'fadeInLeftShorter'
+                      }">
+                      <figure>
+                         <img src="{{asset('theme/images/demos/demo29/banner/5.jpg')}}" alt="banner image" width="280" height="434">
+                      </figure>
+                      <div class="banner-content top w-100 text-center">
+                         <p class="banner-date text-right text-white font-weight-bold">
+                            18-25<sup>TH</sup>MAY
+                         </p>
+                         <h5 class="banner-subtitle text-uppercase text-white">
+                            The Season To Play
+                         </h5>
+                         <h3 class="banner-title font-weight-bold text-white text-uppercase">Up To 50%</h3>
+                         <h4 class="text-white text-uppercase font-weight-normal">Xbox one wireless
+                            controller
+                         </h4>
+                      </div>
+                   </div>
+                </div>
+                <div class="grid-item col-lg-3 col-xs-6 height-x1">
+                   <div class="banner banner3 banner-fixed overlay-dark content-middle appear-animate" data-animation-options="{
+                      'name': 'fadeInUpShorter'
+                      }">
+                      <figure>
+                         <img src="{{asset('theme/images/demos/demo29/banner/4.jpg')}}" alt="banner image" width="280" height="207">
+                      </figure>
+                      <div class="banner-content">
+                         <h5 class="ls-l text-white mb-1 opacity-8">Best Seller</h5>
+                         <h4 class="banner-subtitle text-uppercase ls-s text-white mb-1">Electronic</h4>
+                         <h3 class="banner-title font-weight-bold text-white ls-s ">20% Off</h3>
+                         <a href="demo29-shop.html" class="btn btn-link btn-underline btn-white">Shop
+                         Now<i class="d-icon-arrow-right"></i></a>
+                      </div>
+                   </div>
+                </div>
+                <div class="grid-space col-lg-3 col-xs-6"></div>
+             </div>
+          </section>
        </div>
-       <div class="owl-nav disabled"><button type="button" title="nav" role="presentation" class="owl-prev disabled"><i class="icon-angle-left"></i></button><button type="button" title="nav" role="presentation" class="owl-next disabled"><i class="icon-angle-right"></i></button></div>
-       <div class="owl-dots disabled"></div>
-    </div>
- </div>
+       <section class="grey-section product-wrapper mt-10 pt-10 pb-4">
+          <div class="container pt-2">
+             <div class="title-wrapper with-filters d-flex align-items-center justify-content-between pt-2 mb-4">
+                <h2 class="title title-simple mb-md-0 appear-animate" data-animation-options="{'name': 'fadeInLeftShorter','delay': '.2s'}">New Arrivals</h2>
+                <ul class="nav-filters product-filters font-weight-semi-bold mr-0 appear-animate" data-animation-options="{'name': 'fadeInRightShorter','delay': '.2s'}" data-target="#products-1">
+                   <li><a href="#" class="nav-filter active" data-filter="*">All</a></li>
+                   <?php $Categories = DB::table('category')->limit('5')->get(); ?>
+                   @foreach ($Categories as $cat)
+                   <li><a href="#" class="nav-filter" data-filter="._{{$cat->id}}">{{$cat->cat}}</a></li>
+                   @endforeach
 
-<!-- End .home-slider -->
-    {{-- @include('front.home-slider') --}}
+                </ul>
+             </div>
+             <div id="products-1" class="row grid products-grid pb-2 mb-8 appear-animate" data-grid-options="{
+                'layoutMode': 'fitRows'
+                }">
+                <?php $Trending = DB::table('product')->where('trending','1')->limit('12')->get(); ?>
+                @if($Trending->isEmpty())
 
-    {{-- @include('front.home-filter') --}}
+                @else
+                    @foreach ($Trending as $item)
+                    <div class="grid-item col-xl-2 col-lg-3 col-sm-4 col-6 _{{$cat->id}} ">
+                        <div class="product text-center">
+                            <figure class="product-media">
+                                <a href="{{url('/')}}/product/{{$item->slung}}">
+                                <img src="{{url('/')}}/uploads/product/{{$item->thumbnail}}" alt="{{$item->name}}" width="168" height="190">
+                                </a>
+                                <div class="product-action-vertical">
+                                    <a href="#" class="btn-product-icon btn-cart" data-toggle="modal" data-target="#addCartModal" title="Add to cart"><i class="d-icon-bag"></i></a>
+                                </div>
+                                <div class="product-action">
+                                    <a href="{{url('/')}}/product/{{$item->slung}}" class="btn-product btn-quickviews" title="Quick View">Quick
+                                    View</a>
+                                </div>
+                            </figure>
+                            <div class="product-details">
+                                <div class="product-cat">
+                                    <?php $Category = DB::table('category')->where('id',$item->cat)->get(); ?>
+                                    @foreach($Category as $cat)
+                                    <a  href="{{url('/')}}/products/{{$cat->slung}}">{{$cat->cat}}</a>
+                                    @endforeach
+                                </div>
+                                <h3 class="product-name" style="min-height:38.8px">
+                                    <a href="{{url('/')}}/product/{{$item->slung}}">{{$item->name}}</a>
+                                </h3>
+                                {{-- <div class="product-price">
+                                    <ins class="new-price">$199.00</ins><del class="old-price">$210.00</del>
+                                </div> --}}
+                                @if($item->offer == 1)
+                                    <div class="price-box">
+                                        <del class="old-price">Ksh {{$item->price_raw}}</del>
+                                        <span class="product-price">ksh {{$item->price}}</span>
+                                    </div><!-- End .price-box -->
+                                @else
+                                    <div class="price-box">
+                                        <span class="product-price">ksh {{$item->price}}</span>
+                                    </div><!-- End .price-box -->
+                                @endif
 
-    @include('front.home-combo')
-
-    @include('front.home-trending')
-
-    <section class="product-section2 container">
-        <div class="row">
-            <div class="col-md-4 appear-animate" data-animation-name="fadeInLeftShorter">
-                <h3 class="custom-title">Special Offers</h3>
-                <div class="owl-carousel owl-theme dots-simple">
-                    <?php $SpecialOffers = DB::table('product')->where('offer','1')->get(); ?>
-                    @foreach ($SpecialOffers as $special)
-                    <div class="banner banner1" style="background: url('{{url('/')}}/uploads/product/{{$special->offer_banner}}') rgb(29,160,152); background-position: center; background-size: cover; background-repeat: no-repeat; min-height: 40.2rem;">
-                        <div class="banner-content banner-layer-middle position-absolute">
-
-                            {{-- <img src="{{asset('theme/assets/images/demoes/demo42/shop_brand1.png')}}" width="232" height="28"
-                                alt="brand" /> --}}
-                            <h1 class="text-uppercase text-white" style="font-size:3.5rem">{{$special->name}}</h1>
-                            <?php $Category = DB::table('category')->where('id',$special->cat)->get(); ?>
-                            @foreach($Category as $cat)
-                            {{-- <a target="new" href="{{url('/')}}/products/{{$cat->slung}}" class="product-category">{{$cat->cat}}</a> --}}
-                            <h3 class="banner-subtitle text-uppercase text-white">{{$cat->cat}}</h3>
-                            @endforeach
-
-                            @if (session()->has('rates'))
-
-                                <?php
-                                    $rates = Session::get('rates');
-                                    $Rates = DB::table('rates')->where('rates',$rates)->get();
-                                ?>
-
-                                @foreach ($Rates as $rt)
-                                <h2 class="banner-title text-uppercase text-white font-weight-bold">
-                                    Starting<br>At <sup>{{$rt->symbol}}</sup><?php $total = $special->price*$rt->rates; echo ceil($total) ?><sup>00</sup>
-                                </h2>
-                                @endforeach
-                            @else
-                            <h2 class="banner-title text-uppercase text-white font-weight-bold">
-                                Starting<br>At <sup>ksh</sup>{{$special->price}}<sup>00</sup>
-                            </h2>
-                            @endif
-                            <p class="banner-desc text-white">Start Shopping Right Now</p>
-                            <a href="{{url('/')}}/product/{{$special->slung}}" class="btn btn-dark btn-rounded btn-icon-right ls-25" role="button">Shop
-                                Now
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
+                                <div class="ratings-container">
+                                    <?php $Reviews = DB::table('reviews')->where('product_id',$item->id)->get(); ?>
+                                    @if($Reviews->isEmpty())
+                                    <div class="product-ratings">
+                                        <span class="ratings" style="width:0%"></span>
+                                        <!-- End .ratings -->
+                                        <span class="tooltiptext tooltip-top"></span>
+                                    </div><!-- End .product-ratings -->
+                                    @else
+                                    <?php $ReviewsAvg = DB::table('reviews')->where('product_id',$item->id)->avg('rating'); ?>
+                                    <div class="product-ratings">
+                                        <span class="ratings" style="width:{{$ReviewsAvg}}%"></span>
+                                        <!-- End .ratings -->
+                                        <span class="tooltiptext tooltip-top"></span>
+                                    </div><!-- End .product-ratings -->
+                                    @endif
+                                </div>
+                            </div>
                         </div>
                     </div>
                     @endforeach
+                @endif
+             </div>
+          </div>
+       </section>
+       <section class="product-wrapper mt-10 pt-10 pb-4">
+        <div class="container pt-2">
+           {{-- <div class="title-wrapper with-filters d-flex align-items-center justify-content-between pt-2 mb-4">
+              <h2 class="title title-simple mb-md-0 appear-animate" data-animation-options="{'name': 'fadeInLeftShorter','delay': '.2s'}">You are Shopping</h2>
 
+           </div> --}}
+           <hr>
+           <div id="products-1" class="row grid products-grid pb-2 mb-8 appear-animate" data-grid-options="{
+              'layoutMode': 'fitRows'
+              }">
+              <?php $Trending = DB::table('product')->limit('36')->orderBy('id','DESC')->get(); ?>
+              @if($Trending->isEmpty())
 
-                </div>
-            </div>
-            @include('front.home-suggest')
-            @include('front.home-favorite')
+              @else
+                  @foreach ($Trending as $item)
+                  <div class="grid-item col-xl-2 col-lg-3 col-sm-4 col-6 _{{$cat->id}}">
+                      <div class="product text-center" style="background-color:#f2f3f5">
+                          <figure class="product-media">
+                              <a href="{{url('/')}}/product/{{$item->slung}}">
+                              <img src="{{url('/')}}/uploads/product/{{$item->thumbnail}}" alt="{{$item->name}}" width="168" height="190">
+                              </a>
+                              <div class="product-action-vertical">
+                                  <a href="#" class="btn-product-icon btn-cart" data-toggle="modal" data-target="#addCartModal" title="Add to cart"><i class="d-icon-bag"></i></a>
+                              </div>
+                              <div class="product-action">
+                                  <a href="{{url('/')}}/product/{{$item->slung}}" class="btn-product btn-quickviews" title="Quick View">Quick
+                                  View</a>
+                              </div>
+                          </figure>
+                          <div class="product-details">
+                              <div class="product-cat">
+                                  <?php $Category = DB::table('category')->where('id',$item->cat)->get(); ?>
+                                  @foreach($Category as $cat)
+                                  <a  href="{{url('/')}}/products/{{$cat->slung}}">{{$cat->cat}}</a>
+                                  @endforeach
+                              </div>
+                              <h3 class="product-name" style="min-height:38.8px">
+                                  <a href="{{url('/')}}/product/{{$item->slung}}">{{$item->name}}</a>
+                              </h3>
+                              {{-- <div class="product-price">
+                                  <ins class="new-price">$199.00</ins><del class="old-price">$210.00</del>
+                              </div> --}}
+                              @if($item->offer == 1)
+                                  <div class="price-box">
+                                      <del class="old-price">Ksh {{$item->price_raw}}</del>
+                                      <span class="product-price">ksh {{$item->price}}</span>
+                                  </div><!-- End .price-box -->
+                              @else
+                                  <div class="price-box">
+                                      <span class="product-price">ksh {{$item->price}}</span>
+                                  </div><!-- End .price-box -->
+                              @endif
+
+                              <div class="ratings-container">
+                                  <?php $Reviews = DB::table('reviews')->where('product_id',$item->id)->get(); ?>
+                                  @if($Reviews->isEmpty())
+                                  <div class="product-ratings">
+                                      <span class="ratings" style="width:0%"></span>
+                                      <!-- End .ratings -->
+                                      <span class="tooltiptext tooltip-top"></span>
+                                  </div><!-- End .product-ratings -->
+                                  @else
+                                  <?php $ReviewsAvg = DB::table('reviews')->where('product_id',$item->id)->avg('rating'); ?>
+                                  <div class="product-ratings">
+                                      <span class="ratings" style="width:{{$ReviewsAvg}}%"></span>
+                                      <!-- End .ratings -->
+                                      <span class="tooltiptext tooltip-top"></span>
+                                  </div><!-- End .product-ratings -->
+                                  @endif
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  @endforeach
+              @endif
+           </div>
         </div>
-    </section>
-
-    @include('front.home-brand')
-
-    @include('front.home-call-to-action')
-
-    @include('front.newly-arrived')
+       </section>
 
 
-
-    @include('front.blog')
-    @include('front.home-tags')
-</main>
-<!-- End .main -->
+       <section class="grey-section pt-10 pb-10">
+          <div class="container">
+             <h2 class="title text-center d-block pt-3">Instagram</h2>
+             <div class="owl-carousel owl-theme row cols-lg-5 cols-md-4 cols-sm-3 cols-2 mb-4 pb-4" data-owl-options="{
+                'items': 2,
+                'margin': 20,
+                'loop': false,
+                'responsive': {
+                '480': {
+                'items': 2
+                },
+                '576': {
+                'items': 3
+                },
+                '768': {
+                'items': 4
+                },
+                '992': {
+                'items': 6
+                }
+                }
+                }">
+                <figure class="instagram appear-animate" data-animation-options="{
+                   'name': 'fadeInUpShorter',
+                   'delay': '.3s',
+                   'duration': '.8s'
+                   }">
+                   <a href="#">
+                   <img src="{{asset('theme/images/demos/demo29/instagram/1.jpg')}}" alt="Instagram" width="213" height="213">
+                   </a>
+                </figure>
+                <figure class="instagram appear-animate" data-animation-options="{
+                   'name': 'fadeInUpShorter',
+                   'delay': '.3s',
+                   'duration': '.8s'
+                   }">
+                   <a href="#">
+                   <img src="{{asset('theme/images/demos/demo29/instagram/2.jpg')}}" alt="Instagram" width="213" height="213">
+                   </a>
+                </figure>
+                <figure class="instagram appear-animate" data-animation-options="{
+                   'name': 'fadeInUpShorter',
+                   'delay': '.3s',
+                   'duration': '.8s'
+                   }">
+                   <a href="#">
+                   <img src="{{asset('theme/images/demos/demo29/instagram/3.jpg')}}" alt="Instagram" width="213" height="213">
+                   </a>
+                </figure>
+                <figure class="instagram appear-animate" data-animation-options="{
+                   'name': 'fadeInUpShorter',
+                   'delay': '.3s',
+                   'duration': '.8s'
+                   }">
+                   <a href="#">
+                   <img src="{{asset('theme/images/demos/demo29/instagram/4.jpg')}}" alt="Instagram" width="213" height="213">
+                   </a>
+                </figure>
+                <figure class="instagram appear-animate" data-animation-options="{
+                   'name': 'fadeInUpShorter',
+                   'delay': '.3s',
+                   'duration': '.8s'
+                   }">
+                   <a href="#">
+                   <img src="{{asset('theme/images/demos/demo29/instagram/5.jpg')}}" alt="Instagram" width="213" height="213">
+                   </a>
+                </figure>
+                <figure class="instagram appear-animate" data-animation-options="{
+                   'name': 'fadeInUpShorter',
+                   'delay': '.3s',
+                   'duration': '.8s'
+                   }">
+                   <a href="#">
+                   <img src="{{asset('theme/images/demos/demo29/instagram/6.jpg')}}" alt="Instagram" width="213" height="213">
+                   </a>
+                </figure>
+             </div>
+          </div>
+       </section>
+    </div>
+ </main>
 @endsection
