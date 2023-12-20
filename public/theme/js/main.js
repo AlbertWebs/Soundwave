@@ -1897,7 +1897,7 @@ window.Riode = {};
             self.$items = self.$wrapper.find('.product-variations');
             self.$priceWrap = self.$wrapper.find('.product-variation-price');
             self.$clean = self.$wrapper.find('.product-variation-clean'),
-                self.$btnCart = self.$wrapper.find('.btn-cart');
+                self.$btnCart = self.$wrapper.find('.btn-carts');
 
             // check
             self.variationCheck();
@@ -1920,7 +1920,7 @@ window.Riode = {};
         var initCartAction = function (self) {
 
             // Product Single's Add To Cart Button
-            self.$wrapper.on('click', '.btn-cart', function (e) {
+            self.$wrapper.on('click', '.btn-carts', function (e) {
                 e.preventDefault();
 
                 var $product = self.$wrapper,
@@ -1958,7 +1958,7 @@ window.Riode = {};
                 // minipopup if only quickview or home pages
                 if (
                     (($product.closest('.product-popup').length ||
-                        document.body.classList.contains('home'))) & ($product.find('.btn-product.btn-cart').attr('disabled') != 'disabled')
+                        document.body.classList.contains('home'))) & ($product.find('.btn-products.btn-carts').attr('disabled') != 'disabled')
                 ) {
                     Riode.Minipopup.open({
                         message: 'Successfully Added',
@@ -2127,7 +2127,7 @@ window.Riode = {};
         }
         function compareAdded(e) {
             var $product = $(e.currentTarget).closest('.product-single');
-            if ($product.find('.btn-product.btn-cart').attr('disabled') != 'disabled') {
+            if ($product.find('.btn-products.btn-carts').attr('disabled') != 'disabled') {
                 Riode.Minipopup.open({
                     message: 'Successfully Added',
                     productClass: 'product-compare',
@@ -2341,7 +2341,7 @@ window.Riode = {};
 
             // cart added alert and compare popup
             {
-                Riode.$body.on('click', '.single-product .btn-cart:not(.disabled)', alertCartAdded);
+                Riode.$body.on('click', '.single-product .btn-carts:not(.disabled)', alertCartAdded);
                 Riode.$body.on('click', '.single-product .btn-compare', compareAdded);
             }
 
@@ -3487,7 +3487,7 @@ window.Riode = {};
                 })
 
                 // Add to cart in products
-                .on('click', '.product:not(.product-variable) .btn-product-icon.btn-cart, .product:not(.product-variable) .btn-product.btn-cart', function (e) {
+                .on('click', '.product:not(.product-variable) .btn-products-icon.btn-carts, .product:not(.product-variable) .btn-products.btn-carts', function (e) {
                     e.preventDefault();
 
                     var $product = $(this).closest('.product'),
@@ -3529,7 +3529,7 @@ window.Riode = {};
                 })
 
                 // Add to cart in hotspot
-                .on('click', '.hotspot .btn-cart', function (e) {
+                .on('click', '.hotspot .btn-carts', function (e) {
                     e.preventDefault();
                     var $tooltip = $(this).closest('.tooltip');
                     Riode.Minipopup.open({
@@ -3562,7 +3562,7 @@ window.Riode = {};
                 })
 
                 // Add to compare in products
-                .on('click', '.product .btn-product-icon.btn-compare', function (e) {
+                .on('click', '.product .btn-products-icon.btn-compare', function (e) {
                     e.preventDefault();
                     var $product = $(this).closest('.product');
 

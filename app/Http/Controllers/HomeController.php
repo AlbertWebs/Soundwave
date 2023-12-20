@@ -32,6 +32,13 @@ class HomeController extends Controller
     public function index_home(){
         return view('front.index-home');
     }
+
+    public function list(){
+        $Product = \App\Models\Product::all();
+        return view('front.list', compact('Product'));
+    }
+
+
     public function index()
     {
         $SEOSettings = DB::table('seosettings')->get();

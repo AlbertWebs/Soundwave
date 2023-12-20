@@ -59,7 +59,7 @@
                         <a href="#" class="mobile-menu-toggle">
                         <i class="d-icon-bars2"></i>
                         </a>
-                        <a href="demo29.html" class="logo mr-4">
+                        <a href="{{url('/')}}" class="logo mr-4">
                         <img src="{{url('/')}}/uploads/theme-logo.png" alt="logo" width="183" height="53" />
                         </a>
                     </div>
@@ -354,7 +354,7 @@
             </footer>
         </div>
         <div class="sticky-footer sticky-content fix-bottom">
-            <a href="demo29.html" class="sticky-link">
+            <a href="{{url('/')}}" class="sticky-link">
             <i class="d-icon-home"></i>
             <span>Home</span>
             </a>
@@ -396,7 +396,7 @@
                 </form>
                 <ul class="mobile-menu mmenu-anim">
                 <li>
-                    <a href="demo29.html">Home</a>
+                    <a href="{{url('/')}}">Home</a>
                 </li>
                 <li>
                     <a href="demo29-shop.html">Categories</a>

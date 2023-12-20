@@ -114,22 +114,24 @@
 
 
               <hr class="product-divider">
-              <div class="product-form product-qty">
-                <label>QTY:</label>
-                <div class="product-form-group">
-                  <div class="input-group">
-                    <button class="quantity-minus d-icon-minus"></button>
-                    <input class="quantity form-control" type="number" min="1" max="1000000">
-                    <button class="quantity-plus d-icon-plus"></button>
-                  </div>
-                  <form>
-                    @csrf;
-                    <button class="btn-product btn-cart">
-                        <i class="d-icon-bag"></i>Add To Cart
-                    </button>
-                  </form>
+
+                <div class="product-form product-qty">
+                    {{-- <label>QTY:</label> --}}
+                        <div class="product-form-group">
+                        {{-- <div class="input-group">
+                            <button class="quantity-minus d-icon-minus"></button>
+                            <input class="quantity form-control" type="number" min="1" max="1000000">
+                            <button class="quantity-plus d-icon-plus"></button>
+                        </div> --}}
+                            <a href="https://wa.me/254724013583/?text=Hello, Admin, I am ordering {{$Product->name}} from your website {{url('/')}}/product/{{$Product->slung}}." class="btn-product btn-cart">
+                                <i class="fab fa-whatsapp"></i> Order Now
+                            </a>
+                            <a href="tel:+254724013583" class="btn-product btn-cart">
+                                <i class="d-icon-phone"></i>  Call Now
+                            </a>
+                        </div>
                 </div>
-              </div>
+
               <hr class="product-divider mb-3">
 
               </div>

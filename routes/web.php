@@ -23,6 +23,7 @@ use App\Http\Controllers\DemoController;
 */
 // Route::get('/', [HomeController::class, 'index_home'])->name('home');
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/list', [HomeController::class, 'list'])->name('list');
 Route::get('/home', [HomeController::class, 'index'])->name('home-page');
 Route::get('/product-quick-view/{slung}', [HomeController::class, 'product_quick_view'])->name('product-quick-view');
 Route::get('/products', [HomeController::class, 'categories'])->name('categories');

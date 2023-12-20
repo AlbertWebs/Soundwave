@@ -2,86 +2,27 @@
 @section('content')
 <main class="main home mt-4">
     <div class="page-content">
-       <section class="intro-slider animation-slider owl-carousel owl-theme row cols-1 gutter-no" data-owl-options="{
-          'items': 1,
-          'loop': true,
-          'nav': false,
-          'dots': false,
-          'responsive': {
-          '992': {
-          'nav': true
-          }
-          }
-          }">
-          <div class="intro-slide1 banner banner-fixed" style="background-color: #e6e8e9;">
-             <figure>
-                <img src="{{asset('theme/images/demos/demo29/slides/1.jpg')}}" alt="banner" width="1903" height="469" />
-             </figure>
-             <div class="container">
-                <div class="banner-content y-50">
-                   <h3 class="banner-subtitle d-inline-block slide-animate text-uppercase" data-animation-options="{
-                      'name': 'fadeInUpShorter',
-                      'duration': '1.5s',
-                      'delay': '.3s'
-                      }">From Online Store</h3>
-                   <h2 class="banner-title slide-animate" data-animation-options="{
-                      'name': 'fadeInUpShorter',
-                      'duration': '1.3s',
-                      'delay': '.4s'
-                      }">Originals Comper Star. Xbox</h2>
-                   <p class="font-primary mb-6 slide-animate" data-animation-options="{
-                      'name': 'fadeInUpShorter',
-                      'duration': '1.2s',
-                      'delay': '.5s'
-                      }">Free Shipping on all orders over $320.00</p>
-                   <a href="demo29-shop.html" class="btn btn-rounded btn-dark btn-outline mb-1 slide-animate" data-animation-options="{
-                      'name': 'fadeInUpShorter',
-                      'duration': '1s',
-                      'delay': '.6s'
-                      }">Shop Now<i class="d-icon-arrow-right"></i></a>
-                </div>
-             </div>
-          </div>
-          <div class="intro-slide2 banner banner-fixed" style="background-color: #e6e8e9;">
-             <figure>
-                <img src="{{asset('theme/images/demos/demo29/slides/2.jpg')}}" alt="banner" width="1903" height="469" />
-             </figure>
-             <div class="container">
-                <div class="banner-content y-50 ml-auto text-right">
-                   <div class="slide-animate" data-animation-options="{
-                      'name': 'blurIn',
-                      'duration': '.8s'
-                      }">
-                      <h4 class="banner-subtitle text-uppercase">Lifestyle Collection</h4>
-                      <h2 class="banner-title"><b class="text-primary">Sophisticated</b>Domestic Electric
-                         Machines
-                      </h2>
-                      <a href="demo29-shop.html" class="btn btn-rounded btn-outline btn-dark">Shop now<i class="d-icon-arrow-right"></i></a>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </section>
+
        <div class="container">
           <section class="banners-grid pt-10 mt-6 pb-6">
-             <h2 class="title title-simple">Special Offers</h2>
+
              <div class="row grid">
-                <div class="grid-item col-lg-6 height-x2">
+                <div class="grid-item col-lg-6 height-x2" >
                    <div class="banner banner1 banner-fixed overlay-light appear-animate" data-animation-options="{
                       'name': 'fadeInRightShorter'
-                      }">
+                      }" style="background-color: #e6e6e8">
                       <figure>
-                         <img src="{{asset('theme/images/demos/demo29/banner/2.jpg')}}" alt="banner image" width="680" height="508">
+                         <img src="{{url('/')}}/uploads/banners/ban.png" alt="banner image" width="680" height="508">
                       </figure>
                       <div class="banner-content top w-100 text-center">
                          <h4 class="banner-subtitle text-uppercase mb-2">
                             Deals and Promotion
                          </h4>
-                         <h3 class="banner-title font-weight-bold text-uppercase">Camera &amp; Lens</h3>
-                         <h5 class="text-uppercase">Start at <span class="text-primary">$250.00</span></h5>
+                         <h3 class="banner-title font-weight-bold text-uppercase">Boosters & Amplifiers</h3>
+                         <h5 class="text-uppercase">Start at <span class="text-primary">kes 12,400.00</span></h5>
                       </div>
                       <div class="banner-content bottom w-100 text-center">
-                         <a href="demo29-shop.html" class="btn btn-rounded btn-outline btn-dark mb-4">Shop Now<i class="d-icon-arrow-right"></i></a>
+                         <a href="{{url('/')}}/products/car-amplifiers-booster" class="btn btn-rounded btn-outline btn-dark mb-4">Shop Now<i class="d-icon-arrow-right"></i></a>
                       </div>
                    </div>
                 </div>
@@ -93,10 +34,10 @@
                          <img src="{{asset('theme/images/demos/demo29/banner/3.jpg')}}" alt="banner image" width="280" height="207">
                       </figure>
                       <div class="banner-content">
-                         <h5 class="ls-l mb-1 opacity-8">Featured Event</h5>
+                         <h5 class="ls-l mb-1 opacity-8">Every Week is </h5>
                          <h4 class="banner-subtitle text-uppercase ls-s mb-0">Black Friday</h4>
                          <h3 class="banner-title text-primary font-weight-bold ls-s">Sale</h3>
-                         <a href="demo29-shop.html" class="btn btn-link btn-underline btn-dark">Shop
+                         <a href="{{url('/')}}/products/mid-range-speakers" class="btn btn-link btn-underline btn-dark">Shop
                          Now<i class="d-icon-arrow-right"></i></a>
                       </div>
                    </div>
@@ -106,18 +47,17 @@
                       'name': 'fadeInLeftShorter'
                       }">
                       <figure>
-                         <img src="{{asset('theme/images/demos/demo29/banner/5.jpg')}}" alt="banner image" width="280" height="434">
+                         <img src="{{url('/')}}/uploads/banners/b4.png" alt="banner image" width="280" height="434">
                       </figure>
                       <div class="banner-content top w-100 text-center">
                          <p class="banner-date text-right text-white font-weight-bold">
                             18-25<sup>TH</sup>MAY
                          </p>
                          <h5 class="banner-subtitle text-uppercase text-white">
-                            The Season To Play
+                            The Season To Blast
                          </h5>
                          <h3 class="banner-title font-weight-bold text-white text-uppercase">Up To 50%</h3>
-                         <h4 class="text-white text-uppercase font-weight-normal">Xbox one wireless
-                            controller
+                         <h4 class="text-white text-uppercase font-weight-normal">Best Deals for Bass Speakers
                          </h4>
                       </div>
                    </div>
@@ -131,9 +71,9 @@
                       </figure>
                       <div class="banner-content">
                          <h5 class="ls-l text-white mb-1 opacity-8">Best Seller</h5>
-                         <h4 class="banner-subtitle text-uppercase ls-s text-white mb-1">Electronic</h4>
+                         <h4 class="banner-subtitle text-uppercase ls-s text-white mb-1">Audio Systems</h4>
                          <h3 class="banner-title font-weight-bold text-white ls-s ">20% Off</h3>
-                         <a href="demo29-shop.html" class="btn btn-link btn-underline btn-white">Shop
+                         <a href="#" class="btn btn-link btn-underline btn-white">Shop
                          Now<i class="d-icon-arrow-right"></i></a>
                       </div>
                    </div>
@@ -169,9 +109,9 @@
                                 <a href="{{url('/')}}/product/{{$item->slung}}">
                                 <img src="{{url('/')}}/uploads/product/{{$item->thumbnail}}" alt="{{$item->name}}" width="168" height="190">
                                 </a>
-                                <div class="product-action-vertical">
+                                {{-- <div class="product-action-vertical">
                                     <a href="#" class="btn-product-icon btn-cart" data-toggle="modal" data-target="#addCartModal" title="Add to cart"><i class="d-icon-bag"></i></a>
-                                </div>
+                                </div> --}}
                                 <div class="product-action">
                                     <a href="{{url('/')}}/product/{{$item->slung}}" class="btn-product btn-quickviews" title="Quick View">Quick
                                     View</a>
@@ -247,9 +187,9 @@
                               <a href="{{url('/')}}/product/{{$item->slung}}">
                               <img src="{{url('/')}}/uploads/product/{{$item->thumbnail}}" alt="{{$item->name}}" width="168" height="190">
                               </a>
-                              <div class="product-action-vertical">
+                              {{-- <div class="product-action-vertical">
                                   <a href="#" class="btn-product-icon btn-cart" data-toggle="modal" data-target="#addCartModal" title="Add to cart"><i class="d-icon-bag"></i></a>
-                              </div>
+                              </div> --}}
                               <div class="product-action">
                                   <a href="{{url('/')}}/product/{{$item->slung}}" class="btn-product btn-quickviews" title="Quick View">Quick
                                   View</a>
@@ -306,7 +246,7 @@
        </section>
 
 
-       <section class="grey-section pt-10 pb-10">
+       {{-- <section class="grey-section pt-10 pb-10">
           <div class="container">
              <h2 class="title text-center d-block pt-3">Instagram</h2>
              <div class="owl-carousel owl-theme row cols-lg-5 cols-md-4 cols-sm-3 cols-2 mb-4 pb-4" data-owl-options="{
@@ -384,7 +324,7 @@
                 </figure>
              </div>
           </div>
-       </section>
+       </section> --}}
     </div>
  </main>
 @endsection
