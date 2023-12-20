@@ -53,120 +53,120 @@
          <h1 class="d-none"> Car Stereo Dealer in Nairobi - Sound Wave Audio</h1>
          <header class="header">
             <div class="header-top mobile-hide">
-               <div class="container">
-                  <div class="header-left">
-                     <p class="welcome-msg">
-                        <marquee> Car Stereo Dealer in Nairobi - Sound Wave Audio</marquee>
-                     </p>
-                  </div>
-                  <div class="header-right">
-                     <div class="dropdown">
-                        <a href="#currency">KES</a>
-                        <ul class="dropdown-box">
-                           <li><a href="#USD">KES</a></li>
-                        </ul>
-                     </div>
-                     <div class="dropdown ml-5">
-                        <a href="#language">ENG</a>
-                        <ul class="dropdown-box">
-                           <li>
-                              <a href="#USD">ENG</a>
-                           </li>
-                        </ul>
-                     </div>
-                     <span class="divider"></span>
-                     <a href="https://maps.app.goo.gl/4r9SPMBFot4PyRsE8" class="contact d-lg-show"><i class="d-icon-map"></i>Park Road Business Center, Ring Road, Ngara</a>
-                     <span class="divider"></span>
-                     <a href="mailto:info@soundwaveaudio.co.ke" class="help d-lg-show"><i class="fas fa-envelope-open-text"></i> info@soundwaveaudio.co.ke </a>
-                     <span class="divider"></span>
-                     <a href="tel:+254724013583" class="help d-lg-show"><i class="fas fa-phone"></i> Need Help </a>
+                <div class="container">
+                   <div class="header-left">
+                      <p class="welcome-msg">
+                         <marquee> Car Stereo Dealer in Nairobi - Sound Wave Audio</marquee>
+                      </p>
+                   </div>
+                   <div class="header-right">
+                      <div class="dropdown">
+                         <a href="#currency">KES</a>
+                         <ul class="dropdown-box">
+                            <li><a href="#USD">KES</a></li>
+                         </ul>
+                      </div>
+                      <div class="dropdown ml-5">
+                         <a href="#language">ENG</a>
+                         <ul class="dropdown-box">
+                            <li>
+                               <a href="#USD">ENG</a>
+                            </li>
+                         </ul>
+                      </div>
+                      <span class="divider"></span>
+                      <a href="https://maps.app.goo.gl/4r9SPMBFot4PyRsE8" class="contact d-lg-show"><i class="d-icon-map"></i>Park Road Business Center, Ring Road, Ngara</a>
+                      <span class="divider"></span>
+                      <a href="mailto:info@soundwaveaudio.co.ke" class="help d-lg-show"><i class="fas fa-envelope-open-text"></i> info@soundwaveaudio.co.ke </a>
+                      <span class="divider"></span>
+                      <a href="tel:+254724013583" class="help d-lg-show"><i class="fas fa-phone"></i> Need Help </a>
 
-                     <div class="dropdown login-dropdown off-canvas">
-                        <div class="canvas-overlay"></div>
-                        <div class="dropdown-box scrollable">
-                           <div class="login-popup">
-                              <div class="form-box">
-                                 <div class="tab tab-nav-simple tab-nav-boxed form-tab">
-                                    <ul class="nav nav-tabs nav-fill align-items-center border-no justify-content-center mb-5">
-                                       <li class="nav-item">
-                                          <a class="nav-link active border-no lh-1 ls-normal" href="#signin">Login</a>
-                                       </li>
-                                       <li class="delimiter">or</li>
-                                       <li class="nav-item">
-                                          <a class="nav-link border-no lh-1 ls-normal" href="#register">Register</a>
-                                       </li>
-                                    </ul>
-                                    <div class="tab-content">
-                                       <div class="tab-pane active" id="signin">
-                                          <form action="#">
-                                             <div class="form-group mb-3">
-                                                <input type="text" class="form-control" id="singin-email" name="singin-email" placeholder="Username or Email Address *" required>
-                                             </div>
-                                             <div class="form-group">
-                                                <input type="password" class="form-control" id="singin-password" name="singin-password" placeholder="Password *" required>
-                                             </div>
-                                             <div class="form-footer">
-                                                <div class="form-checkbox">
-                                                   <input type="checkbox" class="custom-checkbox" id="signin-remember" name="signin-remember">
-                                                   <label class="form-control-label" for="signin-remember">Remember
-                                                   me</label>
-                                                </div>
-                                                <a href="#" class="lost-link">Lost your password?</a>
-                                             </div>
-                                             <button class="btn btn-dark btn-block btn-rounded" type="submit">Login</button>
-                                          </form>
-                                          <div class="form-choice text-center">
-                                             <label class="ls-m">or Login With</label>
-                                             <div class="social-links">
-                                                <a href="#" title="social-link" class="social-link social-google fab fa-google border-no"></a>
-                                                <a href="#" title="social-link" class="social-link social-facebook fab fa-facebook-f border-no"></a>
-                                                <a href="#" title="social-link" class="social-link social-twitter fab fa-twitter border-no"></a>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="tab-pane" id="register">
-                                          <form action="#">
-                                             <div class="form-group mb-3">
-                                                <input type="email" class="form-control" id="register-email" name="register-email" placeholder="Your Email Address *" required>
-                                             </div>
-                                             <div class="form-group">
-                                                <input type="password" class="form-control" id="register-password" name="register-password" placeholder="Password *" required>
-                                             </div>
-                                             <div class="form-footer">
-                                                <div class="form-checkbox">
-                                                   <input type="checkbox" class="custom-checkbox" id="register-agree" name="register-agree" required>
-                                                   <label class="form-control-label" for="register-agree">I
-                                                   agree to the
-                                                   privacy policy</label>
-                                                </div>
-                                             </div>
-                                             <button class="btn btn-dark btn-block btn-rounded" type="submit">Register</button>
-                                          </form>
-                                          <div class="form-choice text-center">
-                                             <label class="ls-m">or Register With</label>
-                                             <div class="social-links">
-                                                <a href="#" title="social-link" class="social-link social-google fab fa-google border-no"></a>
-                                                <a href="#" title="social-link" class="social-link social-facebook fab fa-facebook-f border-no"></a>
-                                                <a href="#" title="social-link" class="social-link social-twitter fab fa-twitter border-no"></a>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <button title="Close (Esc)" type="button" class="mfp-close"><span>×</span></button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                      <div class="dropdown login-dropdown off-canvas">
+                         <div class="canvas-overlay"></div>
+                         <div class="dropdown-box scrollable">
+                            <div class="login-popup">
+                               <div class="form-box">
+                                  <div class="tab tab-nav-simple tab-nav-boxed form-tab">
+                                     <ul class="nav nav-tabs nav-fill align-items-center border-no justify-content-center mb-5">
+                                        <li class="nav-item">
+                                           <a class="nav-link active border-no lh-1 ls-normal" href="#signin">Login</a>
+                                        </li>
+                                        <li class="delimiter">or</li>
+                                        <li class="nav-item">
+                                           <a class="nav-link border-no lh-1 ls-normal" href="#register">Register</a>
+                                        </li>
+                                     </ul>
+                                     <div class="tab-content">
+                                        <div class="tab-pane active" id="signin">
+                                           <form action="#">
+                                              <div class="form-group mb-3">
+                                                 <input type="text" class="form-control" id="singin-email" name="singin-email" placeholder="Username or Email Address *" required>
+                                              </div>
+                                              <div class="form-group">
+                                                 <input type="password" class="form-control" id="singin-password" name="singin-password" placeholder="Password *" required>
+                                              </div>
+                                              <div class="form-footer">
+                                                 <div class="form-checkbox">
+                                                    <input type="checkbox" class="custom-checkbox" id="signin-remember" name="signin-remember">
+                                                    <label class="form-control-label" for="signin-remember">Remember
+                                                    me</label>
+                                                 </div>
+                                                 <a href="#" class="lost-link">Lost your password?</a>
+                                              </div>
+                                              <button class="btn btn-dark btn-block btn-rounded" type="submit">Login</button>
+                                           </form>
+                                           <div class="form-choice text-center">
+                                              <label class="ls-m">or Login With</label>
+                                              <div class="social-links">
+                                                 <a href="#" title="social-link" class="social-link social-google fab fa-google border-no"></a>
+                                                 <a href="#" title="social-link" class="social-link social-facebook fab fa-facebook-f border-no"></a>
+                                                 <a href="#" title="social-link" class="social-link social-twitter fab fa-twitter border-no"></a>
+                                              </div>
+                                           </div>
+                                        </div>
+                                        <div class="tab-pane" id="register">
+                                           <form action="#">
+                                              <div class="form-group mb-3">
+                                                 <input type="email" class="form-control" id="register-email" name="register-email" placeholder="Your Email Address *" required>
+                                              </div>
+                                              <div class="form-group">
+                                                 <input type="password" class="form-control" id="register-password" name="register-password" placeholder="Password *" required>
+                                              </div>
+                                              <div class="form-footer">
+                                                 <div class="form-checkbox">
+                                                    <input type="checkbox" class="custom-checkbox" id="register-agree" name="register-agree" required>
+                                                    <label class="form-control-label" for="register-agree">I
+                                                    agree to the
+                                                    privacy policy</label>
+                                                 </div>
+                                              </div>
+                                              <button class="btn btn-dark btn-block btn-rounded" type="submit">Register</button>
+                                           </form>
+                                           <div class="form-choice text-center">
+                                              <label class="ls-m">or Register With</label>
+                                              <div class="social-links">
+                                                 <a href="#" title="social-link" class="social-link social-google fab fa-google border-no"></a>
+                                                 <a href="#" title="social-link" class="social-link social-facebook fab fa-facebook-f border-no"></a>
+                                                 <a href="#" title="social-link" class="social-link social-twitter fab fa-twitter border-no"></a>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                               <button title="Close (Esc)" type="button" class="mfp-close"><span>×</span></button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
             </div>
             @include('front.header-middle')
             <div class="header-bottom">
                <div class="container">
                   <div class="header-category-menu row gutter-no text-white w-100">
                      <div class="category-menu-content scrollable scrollable-light">
-                        <?php $Categories = DB::table('category')->limit('9')->inRandomOrder()->get(); ?>
+                        <?php $Categories = DB::table('category')->get(); ?>
                         @foreach ($Categories as $cat)
                         <div class="category category-icon">
                             <a href="{{url('/')}}/products/{{$cat->slung}}">

@@ -378,6 +378,7 @@
 .rotate-slider .owl-nav .owl-prev {
     display: none;
 }
+
 @media (max-width: 479px) {
     .rotate-slider .owl-nav .owl-next {
         right: auto;
@@ -15828,4 +15829,9 @@ footer .social-link {
     margin-bottom: 2.6rem;
     font-size: 2.4rem;
     line-height: 1.2;
+}
+@media (max-width: 579px) {
+    .mobile-hide{
+        display: none;
+    }
 }

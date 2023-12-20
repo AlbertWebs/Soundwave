@@ -188,9 +188,6 @@ class HomeController extends Controller
                     return view('front.products-category', compact('keywords','page_title', 'Products', 'page_name','search_results','search_results_category'));
             }
         }
-
-
-
     }
 
     public function products_discounts($category){
@@ -284,7 +281,7 @@ class HomeController extends Controller
             // ];
 
             // infinite Scroll
-            $Categories = DB::table('product')->paginate('24');
+            $Categories = DB::table('product')->paginate('36');
             return view('front.categories', compact('keywords','page_title','page_name','Categories'));
     }
 
