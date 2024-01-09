@@ -36,20 +36,7 @@
                 <p>{{$Settings->mobile}}</p>
             </div>
             </a>
-            <span class="divider"></span>
-            <div class="dropdown compare-dropdown off-canvas d-md-show mr-xl-7 mr-4">
-            <a href="#" class="compare compare-toggle mr-0" title="comapre">
-            <i class="d-icon-compare"></i>
-            </a>
-            <div class="canvas-overlay"></div>
 
-            </div>
-            <div class="dropdown wishlist wishlist-dropdown off-canvas">
-            <a href="{{url('/')}}/products" class="wishlist-toggle" title="wishlist">
-            <i class="d-icon-heart"></i>
-            </a>
-            <div class="canvas-overlay"></div>
-            </div>
             <span class="divider"></span>
             <div class="dropdown cart-dropdown type2 off-canvas mr-0 mr-lg-2">
             <a href="#" class="cart-toggles label-block link">
